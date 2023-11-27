@@ -1,3 +1,5 @@
+"use strict";  //treat all JS code as newer version
+
 // Primitive  (STACK)
 /*
     String
@@ -5,7 +7,7 @@
     Boolean 
     Null
     Undefined
-    Symbol
+    Symbol  => unique
     BigInt
 */
 const name = "Vinay"
@@ -18,7 +20,7 @@ const aReallyLongNum = 900235188n
 
 
 
-// Reference (non-Primitive) - Objects   (HEAP)
+// Reference (non-Primitive) - Objects   (HEAP)  (it provide reference)
 /*
     Arrays
     Objects
@@ -39,3 +41,12 @@ const userObject = {
 const sayHello = function(){
     console.log("vinay")
 }
+
+
+
+// this is how we can print data type of values
+
+console.log(typeof 89); //number
+console.log(typeof "vinay");  //string
+console.log(typeof null);  //object
+console.log(typeof undefined);  //undefined

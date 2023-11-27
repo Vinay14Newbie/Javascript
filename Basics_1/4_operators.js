@@ -10,8 +10,31 @@
 
 const numberOne = "2"
 const numberTwo = "4"
+
+let negNumberTwo = -numberTwo  //-4
+console.log(negNumberTwo);
+
 const numberThree = numberOne + numberTwo
-console.log(numberThree)
+console.log(numberThree)  //24
+
+console.log("1"+2+2)  //122
+console.log(1+2+"2")  //32
+console.log(1+2+"3"+3)  //333
+
+
+
+// Increment | Decrement
+let a = 3
+let b = a++
+console.log(a)  //4
+console.log(b);  //3
+
+let x = a
+let y = ++a
+console.log(x)  //4
+console.log(y);  //4
+
+// Decrement is similar to increment
 
 
 
@@ -39,6 +62,13 @@ console.log(first>second) //false
 console.log(first<second) //false
 console.log(first<=second) //true
 console.log(first>=second) //true
+
+// console.log(null > 0)  //false
+// console.log(null == 0)  //false
+// console.log(null >= 0)  //true
+// Here,  The reason is that an equality check == and comparisons > < >= <= work differently
+// Comparisons convert null to a number, treating it as 0.
+// That's why null >= 0 is true and null > 0 is false
 
 
 
