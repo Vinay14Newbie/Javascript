@@ -18,7 +18,7 @@ const jsUser = {
 }
 
 console.log(jsUser.name);  
-console.log(jsUser["name"]);   //another way of accessing the objects value so this is best approach
+console.log(jsUser["name"]);   //another way of accessing the objects value 
 // let assume i've to access full name but it write in string but we can't access it through '.' so we, have to access it just like below or above
 console.log(jsUser["full name"]);
 console.log(jsUser[mySymb]);   //this is how symbol is accessed
