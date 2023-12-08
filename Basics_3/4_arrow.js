@@ -39,7 +39,7 @@ const chai = () => {   //arrow function
 //     return num1 + num2
 // }
 
-// const addTwo = (num1, num2) => num1 + num2   //implicit return  //this will be usefull for react 
+// const addTwo = (num1, num2) => (num1 + num2)   //implicit return  //this will be usefull for react 
 const addTwo = (num1, num2) =>  ({username: "vinay"})   //you have to use bracket's while return object implicitly
 
 console.log(addTwo(32, 23));
