@@ -18,7 +18,7 @@ const user = {
 
 // function chai(){
 //     let username = "vinay"
-//     console.log(this.username);   //undefined   //this works with object only not in function
+//     console.log(this.username);   //undefined   //'this' works with object only not in function
 // }
 // chai()
 
