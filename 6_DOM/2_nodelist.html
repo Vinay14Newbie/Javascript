@@ -1,0 +1,59 @@
+<!-- 
+    innerHTML : return all html nodes
+    textContent : returns all text content
+    innerText : gives the text in the selected node
+    querySelector
+    querySelectorAll
+    getAttribute
+    setAttribute
+    NodeList to Array conversion : Array.from(NodeList)
+ -->
+<!-- 
+    What I learned in DOM nodelist - (32)
+
+    DOM Basics:
+
+        Document Object: document
+        Access Element by ID: document.getElementById("elementId")
+        Access Elements by Tag Name: document.getElementsByTagName("tag")
+        Access Elements by Class Name: document.getElementsByClassName("class")
+        Query Selector: document.querySelector("selector")   //it return first element
+        Query Selector All: document.querySelectorAll("selector")
+
+
+    Element Properties:
+
+        Inner HTML: element.innerHTML
+        Text Content: element.textContent
+        Attribute Value: element.getAttribute("attribute")
+        Set Attribute: element.setAttribute("attribute", "value")
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM-2</title>
+    <style>
+        body{
+            background-color: #212121;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">DOM learning from Hitesh Sir <span style="display: none;">test text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>

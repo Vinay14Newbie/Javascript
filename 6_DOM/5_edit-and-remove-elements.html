@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-4</title>
+</head>
+<body style="background-color: #212121; color: white">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<script>
+    function addLang(langName){
+        const li = document.createElement('li')  //creating new 'li' element
+        li.innerHTML = `${langName}`  //adding value
+        document.querySelector('.language').appendChild(li)  //appending this code at 'language' parent
+    }
+    addLang("Python")
+    addLang("Java")
+    // above function will take lot of time to traverse for large numbers
+
+    function addLanOptimal(langName){   //little optimized than above
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))  //make habit of using 'appendchild' instead of innerHTML it is little optimize
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanOptimal("Golang")
+    addLanOptimal("C++")
+
+
+    //edit
+    const secondLang = document.querySelector('li:nth-child(2)')
+    // secondLang.innerHTML = "Mojo"  //this is another way
+    // OR
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    // edit
+    const firstLang = document.querySelector('li:first-child')
+    // const newli2 = document.createElement('li')
+    // newli2.textContent = "Typescript"
+    // firstLang.replaceWith(newli2)
+    firstLang.outerHTML = '<li>Swift</li>'
+
+    // remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()  //removes C++
+</script>
+</html>

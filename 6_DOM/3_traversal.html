@@ -1,0 +1,51 @@
+<!-- Traversal:
+
+    Parent Node: element.parentNode
+    Child Nodes: element.childNodes
+    Next Sibling: element.nextSibling
+    Previous Sibling: element.previousSibling
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-3 | Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: white">
+    <div class="parent">
+        <!-- comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        const parent = document.querySelector('.parent')
+        // console.log(parent);
+        // console.log(parent.children);  //return all childrens
+        // console.log(parent.children[1]);  //selects tuesday 
+        // console.log(parent.children[1].innerText);  //Tuesday
+
+        // for(let i=0; i<parent.children.length; i++){
+        //     console.log(parent.children[i].innerHTML);
+        // }
+        parent.children[1].style.color = "lightgreen"
+        
+        // console.log(parent.firstElementChild);  //return first child
+        // console.log(parent.lastElementChild);
+
+        const dayOne = document.querySelector('.day')
+        // console.log(dayOne);  //monday | it return whole code of that child
+        // console.log(dayOne.parentElement);  //return parent element
+        // console.log(dayOne.nextElementSibling);  //tuesday
+
+        console.log("NODES: ", parent.childNodes);  //nodelist so right now for this point there are 11 nodelists
+        // it counts for every element even for next line even for comment
+        // NodeList(11) [text, comment, text, div.day, text, div.day, text, div.day, text, div.day, text]0: text1: comment2: text3: div.day4: text5: div.day6: text7: div.day8: text9: div.day10: textlength: 11[[Prototype]]: NodeList
+    </script>
+</body>
+</html>
