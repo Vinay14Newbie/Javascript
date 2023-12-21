@@ -81,7 +81,7 @@ form.addEventListener('submit', (e) => {
 ```
 
 
-## Project 4 - Guess the Number
+## Project 3 - Digital Clock
 
 ```javascript
 const clock = document.getElementById('clock')
@@ -95,7 +95,7 @@ setInterval(function(){
 ```
 
 
-## Project 3 - Digital Clock
+## Project 4 - Guess the Number
 
 ```javascript
 let randomNo = Math.round(Math.random()*100+1);
