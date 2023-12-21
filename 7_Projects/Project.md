@@ -81,7 +81,7 @@ form.addEventListener('submit', (e) => {
 ```
 
 
-## Project 3 - Digital Clock
+## Project 4 - Guess the Number
 
 ```javascript
 const clock = document.getElementById('clock')
