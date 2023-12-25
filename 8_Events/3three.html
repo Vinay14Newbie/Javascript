@@ -1,0 +1,37 @@
+<!-- In this by clicking the start button it'll start printing and by clicking stop it'll stop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Project</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(() => {
+    //     console.log('Vinay', Date.now());
+    // }, 1000);
+    // OR
+
+    const sayDate = function(str){
+        console.log(str, 'Vinay', Date.now());
+    }
+
+    let intervalId;
+
+    document.querySelector('#start').addEventListener('click', () => {
+        console.log('Start');
+        intervalId = setInterval(sayDate, 1000, 'hii')
+    }) 
+
+    document.querySelector('#stop').addEventListener('click', () => {
+        console.log('Stop');
+        clearInterval(intervalId)
+    })
+</script>
+</html>
