@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API request assignment</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <div class="banner">
+        <div class="img-wrapper">
+            <img class="img" src="" alt="">
+        </div>
+        <p class="name"> </p>
+        <p class="id"> </p>
+        <p class="following"> </p>
+    </div>
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/Vinay14Newbie'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.responseText);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+
+            const img = document.querySelector('.img');
+            img.setAttribute("src", data.avatar_url)
+            img.setAttribute("width", '300px')
+            img.setAttribute("height", '300px')
+
+            const following = document.querySelector('.following')
+            following.innerHTML = `Following : ${data.following}`
+
+            document.querySelector('.name').innerHTML = `Name : ${data.name}`
+            document.querySelector('.id').innerHTML = `ID : ${data.id}` 
+        }
+    }
+    xhr.send()
+</script>
+</html>
