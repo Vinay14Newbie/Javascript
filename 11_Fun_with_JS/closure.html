@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; // name is a local variable created by init
+    //     function displayName() {
+    //         // displayName() is the inner function, that forms the closure
+    //         console.log(name); // use variable declared in the parent function
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+
+    // function outer(){
+    //     let username = "vinay"
+
+    //     function inner(){
+    //         console.log('inner function :',username);
+    //     }
+    //     inner()
+    // }
+    // outer()
+    // console.log(username);
+
+
+    function makeFunc() {
+        const name = "Vinay";
+        const title = "Duryodhan"
+        function displayName() {
+            console.log(name, title);
+        }
+        return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc();
+
+</script>
+
+<script>
+    // document.getElementById("orange").onclick = () => {
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+    // document.getElementById("green").onclick = () => {
+    //     document.body.style.backgroundColor = 'green'
+    // }
+    // Better way 
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`   //this will directly implement function so don't use it
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById('orange').onclick = clickHandler('orange')
+    document.getElementById('green').onclick = clickHandler('green')
+</script>
+</html>
