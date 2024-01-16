@@ -6,6 +6,7 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();  // Prevent the default form submission behavior
 
+    // Here, 'value' property is used to get the current value of the selected input element. 
     const height = parseInt(document.querySelector('#height').value);
     const weight = parseInt(document.querySelector('#weight').value);   
     const result = document.querySelector('#result');
