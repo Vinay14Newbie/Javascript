@@ -35,8 +35,9 @@ const userObject = {
     age: 19,
     isAdult: true
 }
-// let anotherUser = userObject{}
-    //so here if i change values of name and age  the changes will reflect on userObject as well
+userObject.name = "hitesh"
+console.log(userObject.name);
+//so here if i change values of name and age  the changes will reflect on userObject as well
 
 const sayHello = function(){
     console.log("vinay")
