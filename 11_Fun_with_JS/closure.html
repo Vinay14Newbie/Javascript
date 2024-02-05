@@ -59,9 +59,13 @@
     function clickHandler(color){
         // document.body.style.backgroundColor = `${color}`   //this will directly implement function so don't use it
 
-        return function(){
+        return () => {
             document.body.style.backgroundColor = `${color}`
         }
+        // OR
+        // return function(){
+        //     document.body.style.backgroundColor = `${color}`
+        // }
     }
     document.getElementById('orange').onclick = clickHandler('orange')
     document.getElementById('green').onclick = clickHandler('green')

@@ -2,10 +2,12 @@ function multBy5(num){
     return num * 5
 }
 
-multBy5.vinay = 7
+multBy5.vinay = "Vinay"
+multBy5.num = 7
 
 console.log(multBy5(5));
-console.log(multBy5.vinay);  // 7 
+console.log(multBy5.vinay);  // vinay
+console.log(multBy5.num);  // 7
 console.log(multBy5.prototype);  // {}
 
 function createUser(username, score){
@@ -23,6 +25,7 @@ createUser.prototype.printMe = function(){
 const chai = new createUser("chai", 25)
 const tea = createUser("tea", 250)
 
+console.log(tea);  // undefined
 chai.increament()
 chai.printMe()  // 26
 

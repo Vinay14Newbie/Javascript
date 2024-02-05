@@ -1,7 +1,7 @@
 // let myName = "Vinay      "
 // let myPhone = "Oppo    "
 
-// console.log(myName.length);
+// console.log(myName.length);  //11
 
 
 let myHeros = ["thor", "spiderman"]
@@ -24,7 +24,7 @@ Array.prototype.heyVinay = function(){
 }
 
 // heroPower.vinay()
-myHeros.vinay()
+myHeros.vinay()    // array also have vinay() function cause of prototype inheritance
 
 myHeros.heyVinay()
 // heroPower.heyVinay()   // fail to run  //only array got the power
@@ -58,6 +58,7 @@ teacher.__proto__ = user
 
 
 // modern syntax
+// in simple language it equals the heirarchy of the objects so we can access the different objects at once 
 
 Object.setPrototypeOf(teachingSupport, teacher)
 
