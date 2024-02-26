@@ -1,0 +1,29 @@
+1 :- js don't have all the functions so they borrow it from the browser
+
+***js language mai kuch cheeje nahi hai jo hum use kar sakte hai aur wo cheeje hume js se nahi balki browser se milti hai, aise saare features jo js ka part nahi hai but fir bhi use kar sakte hai unhe hum dhoond sakte hai ek particular object mai jiska name hai window***
+OR
+***js mai kai saare features hai par kucch features jo hum use karte hai wo features wo nahi par fir bhi use kar paate hai kyoki wo features js language use kar leti hai window se, aur window hai ek box of features given by browser to use with js***
+
+EX..
+    alert
+    console
+    prompt
+
+To check more features of window you can type window on console on browser
+
+
+
+2 :- Execution context
+
+*Execution context is a container where the function's code is executed and it's created whenever a function is called, it contains 3 things, variables, functions, and lexical environment
+
+
+
+3 :- lexical environment
+
+*It's a chart jisme likha hota ki apka particular function kis cheejo ko access kar sakte hai and kinko nahi* you can say it scope chain | matlab ki it holds scope and scope chain
+
+
+
+4 :- forEach loop only works on array
+*forEach kabhi bhi by default aapke array mai change nahi karta wo aapko changes karke deta hai array ki temporary copy par jiske wajah se array humesha same rehta hai*

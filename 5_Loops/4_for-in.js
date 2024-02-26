@@ -1,3 +1,4 @@
+// 'forIn' loop only works on objects in JavaScript.
 const myObj = {
     js : 'javascript',
     cpp : 'C++',

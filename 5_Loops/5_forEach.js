@@ -1,4 +1,6 @@
 // forEach
+// 'forEach' loop only works on arrays in JavaScript.
+// forEach kabhi bhi by default aapke array mai change nahi karta wo aapko changes karke deta hai array ki temporary copy par jiske wajah se array humesha same rehta hai
 
 const arr = ['js', 'ruby', 'java', 'python', 'django']
 

@@ -2,7 +2,7 @@
 const userEmail  = []
 
 if(userEmail){
-    console.log("got user mail");
+    console.log("got user mail"); //it will be printed
 }else{
     console.log("don't have user mail");
 }
