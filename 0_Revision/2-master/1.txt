@@ -1,0 +1,31 @@
+higher order function
+Constructor function
+first class functions
+new keyword
+iife
+prototype
+prototypal inheritance
+this call apply bind
+pure & impure functions
+closures
+
+
+
+1.  Higher order function
+Higher order function are the functions which accept a function in a parameter or return a function or both
+
+For Ex... ForEach method always takes another function inside it, so ForEach is a higher order function
+
+Aesa function jo accept karle ek aur function ya fir wo return karde ek aur function
+
+
+
+
+2. Constructor
+A function which whenever invoked with "new" keyword, returns an object, if we use "this" keyword inside that function, it returns an object with all of the properties and methods mentioned inside that function, such function is called Constructor function\
+
+
+
+
+3. First class function
+A language is said to have first class functions when the functions in that language are treated as variables, you can save them, you can pass them as arguments to another functions
