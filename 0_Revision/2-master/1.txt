@@ -29,3 +29,18 @@ A function which whenever invoked with "new" keyword, returns an object, if we u
 
 3. First class function
 A language is said to have first class functions when the functions in that language are treated as variables, you can save them, you can pass them as arguments to another functions
+
+
+
+
+4. Prototype
+
+-What does it contains
+[[prototype]] contains many helper properties and methods which we can use to complete our task, let's say we crete an array and we want to know length of it, what do we do, we use .length property on array, did we created .length on that array, not but it still contains .length, the question is how?
+the answer is, many properties and methods are already available to use built by javascript creators inside prototype of every object
+
+
+
+
+5. prototypal inheritance
+That's exactly what we're going to talk about now, inheritance is basically passing parent's features or properties to their childrens, to do the same thing in javascript with the help of prototype (one extra property always given by javascript to every object) is called prototypal inheritance.
