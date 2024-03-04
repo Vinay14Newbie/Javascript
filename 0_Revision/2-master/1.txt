@@ -44,3 +44,18 @@ the answer is, many properties and methods are already available to use built by
 
 5. prototypal inheritance
 That's exactly what we're going to talk about now, inheritance is basically passing parent's features or properties to their childrens, to do the same thing in javascript with the help of prototype (one extra property always given by javascript to every object) is called prototypal inheritance.
+
+
+
+
+6. this
+this keyword is a special keyword in javascript which changes it's value in different context
+
+
+
+
+7. pure function is any function which has these 2 features
+i) it should always return same output for same input
+ii) it will never change/update the value of a global variable
+
+and impure function is opposite of it
