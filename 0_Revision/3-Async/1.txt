@@ -1,0 +1,42 @@
+sync and async kya hota hai?
+async js hai kya?
+js is not async
+async ki poori kahani
+single threading and multi threading
+callbacks
+promises
+then and catch 
+try and catch
+async await
+
+[concept aside]
+concurrency and parallelism
+throttling
+
+
+
+1. sync
+sync matlab ek ke baad dusra hoga, jab tak ek command complete naa ho, dusra shuru nahi hoga
+
+
+
+
+2. async
+sare kaam ek saath shuru kardo, jiska ans pehle aajaye uska jawaab dedena
+
+
+
+
+--
+async code ka main motive hota hai ki un cases mai jinmei hume pata nahi code ka ans kitni der mei ayega to jab bhi ans aa jaaye uske ans ke respect mei koi particular code chala dena
+--facebook se photo laao aur jab photo aa jaaye to show kar dena
+
+
+
+
+3. Async ki poori kahani
+Assume there are two stacks in js main(Execution stack) and side stack
+jo bhi main stack par hota hai wo output karta/deta hai and jo bhi side stack par hota hai wo behind the scenes processing kar sakta hai aur jab bhi uski processing complete ho use main stack mai laa kar chalaya ja sakta hai
+
+Event loop :-
+communicate b/w main stack and side stack
