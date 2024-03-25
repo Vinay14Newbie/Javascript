@@ -40,3 +40,9 @@ jo bhi main stack par hota hai wo output karta/deta hai and jo bhi side stack pa
 
 Event loop :-
 communicate b/w main stack and side stack
+
+
+
+
+//
+koi bhi esa function jisme aap async code likhenge, kyoki wo async code hai to aap promises ka istmal kar sakte hai, jab uska ans aayega aapko then lagana padega, us then se lagane se bachne ke liye, aap async await ka istmal kar sakte hai
