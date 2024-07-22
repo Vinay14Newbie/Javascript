@@ -1,3 +1,4 @@
+// {} is a scope
 
 // var c = 300
 
@@ -58,8 +59,8 @@ function addone(val){
 }
 
 
-addTwo(3)   //will not work as above, it will give error
-const addTwo = function(val){
+addTwo(3)   //will not work as above, it will give error | addTwo is not defined yet
+const addTwo = function(val){   //addTwo can be called as expression
     return val + 2;
 }
 console.log(addTwo(5));   //7

@@ -78,7 +78,8 @@ consumePromise5()
 //     try{
 //         const respone = await fetch('https://jsonplaceholder.typicode.com/users')
 //         // console.log(respone);
-//         const data = await respone.json()
+//         const data = await respone.json()  //here JSON fromat `response.json()` is used to parse this JSON data into a usable js object
+
 //         console.log(data);
 //     }catch(error){
 //         console.log('E: ', error);

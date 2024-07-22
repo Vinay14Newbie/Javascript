@@ -13,7 +13,8 @@ const user = {
 // console.log(user.username);   //hitesh
 // user.welcomeMessage()   //hitesh , welcome to website
 
-// console.log(this);  //{}
+// console.log(this);  //{} we're in node & right now global has no context
+// if you run this line on browser console it will give 'window' 
 
 
 // function chai(){
@@ -24,6 +25,7 @@ const user = {
 
 
 // const chai = function(){
+// //  console.log(this); // it will give lots of values
 //     let username = "vinay"
 //     console.log(this.username);  //undefined
 // }

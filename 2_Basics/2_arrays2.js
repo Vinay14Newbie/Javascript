@@ -25,10 +25,20 @@ console.log(usableArr); /*[
 
 console.log(Array.isArray("vinay"));  //false checking state
 console.log(Array.from("vinay"));  //[ 'v', 'i', 'n', 'a', 'y' ]
-console.log(Array.from({name:'vinay'}));  //[]  //interesting
+console.log(Array.from({name:'vinay'}));  //[]  //interesting // it will be confuse to of which value should i make array of, it can be key or value
 
 
 let score1 = 100
 let score2 = 200
 let score3 = 300
 console.log(Array.of(score1, score2, score3));  //[ 100, 200, 300 ]  //Returns a new array from a set of elements.
+
+
+
+
+// important in aspects to react.js
+function a (){
+    return [12, "vinay", 234]
+}
+const [num, name, num2] = a()
+console.log(num, name, num2);

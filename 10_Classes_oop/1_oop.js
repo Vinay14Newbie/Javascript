@@ -4,14 +4,21 @@ const user = {
     signedIn : true,
 
     getUserDetails : function(){
+        let name = "vinay duryodhan"
         // console.log('Got user details from Database');
         // console.log(`Username: ${user.username}, Username: ${this.usernames}`);
         console.log(this);  //print all values of 'user'
+    },
+    getUserDetails2 : ()=>{
+        let name = "john cena"
+        console.log(name);
+        console.log(this);  
     }
 }
-console.log(user.username);
-// user.getUserDetails()
-console.log(this);
+console.log("username is "+user.username);
+user.getUserDetails()   //this will print whole info of the object
+user.getUserDetails2()   //{}
+console.log(this);   //{}
 
 
 

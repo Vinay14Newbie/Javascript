@@ -8,7 +8,7 @@ const randomColor = function () {
     return color;
   };
   
-  let intervalId;
+  let intervalId; 
   
   const startChangingColor = function () {
     if (!intervalId) {

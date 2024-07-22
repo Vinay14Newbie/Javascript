@@ -8,6 +8,9 @@
 10%3
 */
 
+// Falsy values :- 0 false undefined NaN null "" document.all 
+
+
 const numberOne = "2"
 const numberTwo = "4"
 

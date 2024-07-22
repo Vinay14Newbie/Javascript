@@ -1,4 +1,4 @@
-// singleton
+// singleton : when made up with costructor
 
 
 // object literals
@@ -6,6 +6,7 @@
 
 const mySymb = Symbol("Key")  //this is how symbol is declared
 
+// by default keys are kept in string form
 const jsUser = {
     name : "vinay",
     "full name" : "Vinay Duryodhan",
@@ -31,7 +32,7 @@ console.log(jsUser["name"]);
 jsUser.greeting = function(){
     console.log("Hello guys");
 }
-console.log(jsUser.greeting);   //[Function (anonymous)]
+console.log(jsUser.greeting);   //[Function (anonymous)]  //returned reference
 console.log(jsUser.greeting());  //Hello guys
                                  // undefined
 

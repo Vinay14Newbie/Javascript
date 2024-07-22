@@ -8,6 +8,7 @@
 <body style="background-color: #212121; color: white;">
     <button id="orange">Orange</button>
     <button id="green">Green</button>
+    <button id="yellow">Yellow</button>
 </body>
 <script>
     // function init() {
@@ -69,5 +70,6 @@
     }
     document.getElementById('orange').onclick = clickHandler('orange')
     document.getElementById('green').onclick = clickHandler('green')
+    document.getElementById('yellow').addEventListener('click', clickHandler('yellow'))  //another way 
 </script>
 </html>

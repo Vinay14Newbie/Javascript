@@ -5,6 +5,7 @@
 
 
 const arr = [1, 2, 3, 4, 5, 6, "vinay"]
+arr.push('hitesh')
 console.log(arr);
 const myHeros = ["iron man", "shaktiman", "thor"]
 
@@ -14,7 +15,7 @@ console.log(myArr[2]);  //3
 
 // Arrray Methods
 
-myArr.push(5)  //adds 5
+myArr.push(5)  //adds 5   // [1, 2, 3, 4, 5]
 myArr.pop()   //remove top item like stacks do
 console.log(myArr);  //[ 1, 2, 3, 4 ]
 
@@ -28,7 +29,7 @@ console.log(myArr.indexOf(9));  //-1 coz it not exists
 
 const newArr = myArr.join()
 console.log(myArr);
-console.log(newArr);
+console.log(`newArr `+ newArr);
 console.log(typeof newArr);  //string
 
 
@@ -42,3 +43,19 @@ console.log("B ", myArr);   //B  [ 1, 2, 3, 4 ]
 const myn2 = myArr.splice(1, 3)
 console.log(myn2);  //[ 2, 3, 4 ]
 console.log("C ", myArr);  //C  [ 1 ]
+
+
+
+
+let a = ["vinay", "kunal", "dynandip"]
+let b = a
+b[0] = "ritesh"
+console.log(a);  //[ 'ritesh', 'kunal', 'dynandip' ]
+console.log(b);  //[ 'ritesh', 'kunal', 'dynandip' ]
+// this is how the reference works
+
+// Now
+let c = [...a]  // so by using spread(...) we will not create a shallow copy
+// Shallow copy creates a new object with same references to the same memory as the original object, while deep copying creates a new object with new memory locations with new memory locations for all of its properties and nested objects or arrays
+c[0] = "vinay"
+console.log(c);

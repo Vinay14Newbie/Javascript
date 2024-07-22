@@ -37,3 +37,11 @@ obj2.name = "harsh"
 
 console.log(obj.name);  // vinay
 console.log(obj2.name);  // harsh
+
+let obj3 = {
+    city : "Chandrapur"
+}
+let obj4 = {...obj3}
+// obj4.city = "nagpur"
+console.log(obj4.city);  //chandrapur
+console.log(obj3.city);  //chandrapur
