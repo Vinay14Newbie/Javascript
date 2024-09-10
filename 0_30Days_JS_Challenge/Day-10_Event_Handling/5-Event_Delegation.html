@@ -1,0 +1,52 @@
+<!-- Event delegation in js is a pattern that efficiently handles events. Events can be added to a parent element instead of adding to every single element. It refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- By default, events triggered on an element propagate up the DOM tree to the element's parent, its ancestors, and on up until the root element(html) -->
+    <!-- 'div' which is a parent of a 'span' which in turn is a parent of the 'button' element -->
+    <!-- Due to event bubbling, when the button receives an event, say click, that event bubbles up the tree, so 'span' and 'div' will respectively receive the event also -->
+
+    <div>
+        <span>
+            <button id="btn">
+                Click me!
+            </button>
+            <button id="hit">
+                Hit me!
+            </button>
+            <button id="change">
+                change name
+            </button>
+        </span>
+    </div>
+</body>
+<script>
+    //-- Add a click event listner to a list that logs the text content of the clicked list item using event delegation
+    const div = document.querySelector('div')
+    div.addEventListener('click', (e)=>{
+        console.log(e.target.id);  //btn
+        console.log(e.target.textContent); //Click me!
+    })
+
+
+
+    //-- add an event listener to a parent element that listens for events from dynamically added child elements.
+    const p = document.createElement("p")
+    p.innerText = "Hello my name is vinay"
+    p.classList.add("p")
+    div.appendChild(p)
+    div.addEventListener('click', (e)=>{
+        console.log(e.target.id);
+        if(e.target.id === 'change'){
+            p.innerText = "Hello my name changed, now it is Harsh"
+        }
+    })
+</script>
+</html>

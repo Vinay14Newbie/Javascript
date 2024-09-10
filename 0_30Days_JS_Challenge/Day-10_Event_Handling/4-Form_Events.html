@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" placeholder="name" id="in">
+        <label for="in">Enter name</label>
+        <button type="submit">submit</button>
+    </form>
+
+    <label for="city">Enter city</label>
+    <select name="coties" id="city">
+        <option value="">Choose your city</option>
+        <option value="chandrapur">chandrapur</option>
+        <option value="gadachiroli">gadachiroli</option>
+        <option value="nagpur">nagpur</option>
+    </select>
+    <p class="data"></p>
+</body>
+<script>
+    const form = document.querySelector('form')
+    
+    // add a submit event listner to a form that prevents the default submission and logs the form data to the console
+    form.addEventListener('submit', (e)=>{
+        e.preventDefault()
+        console.log(e);
+    })
+
+    // add a change event listener to a select dropdown that displays the selected the value in a paragraph
+    const sel = document.querySelector('select')
+    sel.addEventListener('change', (e)=>{
+        const data = e.target.value
+        document.querySelector('.data').textContent = "Your selected city is: "+data
+    })
+</script>
+</html>

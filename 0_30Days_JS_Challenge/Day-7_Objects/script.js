@@ -1,4 +1,4 @@
-// Objects
+// Objects  | Object creation and access, Object Methods, Nested objects, Object iteration
 
 // Object creation and access
 const book = {

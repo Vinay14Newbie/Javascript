@@ -1,4 +1,4 @@
-// DOM
+// DOM  | Selecting and Manipulating Elements, Creating and appending Elements, creating a new li element and add it to an existing ul list, Removing elements, Modifying Attributes and Classes, Event handling
 
 // Selecting and Manipulating Elements
 document.getElementById('greeting').textContent = "Hello my name is Vinay"

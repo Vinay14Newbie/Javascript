@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p id="para">It's not me, it's you...</p>
+        <p id="para2">It's you, not me...</p>
+    </div>
+</body>
+<script>
+    // add a mouseover event listner to an element that changes its background color
+    const para1 = document.querySelector('#para')
+    para1.addEventListener('mouseover', (e)=>{
+        para1.style.backgroundColor = 'orange'
+    })
+
+    // add a mouseout event listner to an element that resets its background color
+    const para2 = document.querySelector('#para2')
+    para2.addEventListener('mouseout', (e)=>{
+        para2.style.backgroundColor = 'lightgreen'
+    })
+</script>
+</html>

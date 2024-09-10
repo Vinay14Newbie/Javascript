@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p class="para">Hey my name is Deepak</p>
+        <button>click me</button>
+    </div>
+    <div>
+        <img src="./assets/kousei arima2.jpg" alt="kousei">
+    </div>
+</body>
+<script>
+    // Add a click event listner to a button that changes the text content of a paragraph
+    document.querySelector('button').addEventListener('click', (e) => {
+        let a = document.querySelector('.para')
+        a.textContent = "Hey my actual name is Vinay :)"
+    })
+
+    // Add a double-click event listner to an image that toggles its visibility
+    document.querySelector('img').addEventListener('dblclick', (e) => {
+        document.querySelector('img').style.visibility = 'hidden'
+    })
+</script>
+</html>
