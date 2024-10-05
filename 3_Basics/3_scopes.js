@@ -51,7 +51,8 @@ if(true){
 
 
 
-// ************************ interesting ************************ 
+// ************************ interesting ************************
+// Hoisting 
 
 console.log(addone(5));  //6
 function addone(val){
