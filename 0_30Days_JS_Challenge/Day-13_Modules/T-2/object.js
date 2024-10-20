@@ -8,5 +8,16 @@ const obj = {
         console.log(5*5);
     }
 }
+const fun = function(){
+    console.log("say hello");
+}
 
-module.exports = obj
+// module.exports = obj
+
+// another way to return multiple things through one file
+// return it in a object
+
+module.exports = {
+    obj,
+    fun
+}
