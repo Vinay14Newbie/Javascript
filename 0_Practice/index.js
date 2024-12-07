@@ -4,7 +4,7 @@ const obj = {
     y : 30,
 
     display : function(){
-        console.log(`value of x is ${this.x} and y is ${this.y} from outer x and y`);
+        // console.log(`value of x is ${this.x} and y is ${this.y} from outer x and y`);
 
         const innerobj = {
             x : -1,
@@ -20,6 +20,7 @@ const obj = {
         }
         innerobj.inner()  //Here, this refers to innerobj because inner is a regular function. 
         innerobj.inner2()  //Arrow functions do not have their own this context; instead, they inherit this from the enclosing scope, which is the display function. Therefore, this still refers to obj
+        // So arrow function don't have their own this, so it inherit from display() function who inherits 'this' froom 'obj' 
     }
 }
 obj.display();
